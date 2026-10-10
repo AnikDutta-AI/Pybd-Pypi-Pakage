@@ -1,4 +1,4 @@
-```toml
+
 [build-system]
 requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
@@ -12,7 +12,7 @@ requires-python = ">=3.10"
 license = "MIT"
 
 authors = [
-    { name = "Anik Dutta", email = "anikdatta@gmail.com" }
+    { name = "Anik Dutta", email = "anikdatta979@gmail.com" }
 ]
 
 keywords = [
@@ -70,4 +70,3 @@ pythonpath = ["src"]
 [tool.mypy]
 mypy_path = "src"
 ignore_missing_imports = true
-```
