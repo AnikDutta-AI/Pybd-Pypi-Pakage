@@ -15,10 +15,6 @@ jobs:
     name: Python ${{ matrix.python-version }} - ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
 
-    defaults:
-      run:
-        working-directory: ./pybd
-
     strategy:
       fail-fast: false
       matrix:
@@ -33,6 +29,14 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
+
+      - name: Check repository structure
+        shell: python
+        run: |
+          import os
+          print("Current directory:", os.getcwd())
+          print("Files:", os.listdir("."))
+          print("pyproject.toml exists:", os.path.isfile("pyproject.toml"))
 
       - name: Install package and dependencies
         run: |
