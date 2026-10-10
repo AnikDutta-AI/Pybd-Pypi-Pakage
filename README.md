@@ -1,4 +1,4 @@
-# pybd-in
+# pybd
 
 **Dataset Analysis, Data Quality Assessment, and Preprocessing Recommendations for Python**
 
