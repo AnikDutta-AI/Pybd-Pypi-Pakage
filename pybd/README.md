@@ -113,7 +113,7 @@ src/
 ## Author
 
 **Anik Dutta**  
-Email: anikdatta@gmail.com
+Email: anikdatta979@gmail.com
 
 ## License
 
