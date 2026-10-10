@@ -1,4 +1,3 @@
-
 name: Python Package CI
 
 on:
@@ -14,6 +13,10 @@ jobs:
   test:
     name: Python ${{ matrix.python-version }} - ${{ matrix.os }}
     runs-on: ${{ matrix.os }}
+
+    defaults:
+      run:
+        working-directory: ./pybd
 
     strategy:
       fail-fast: false
