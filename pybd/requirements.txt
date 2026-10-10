@@ -1,0 +1,14 @@
+pathlib
+pydantic
+pandas==2.1.1
+numpy==1.24.3
+scikit-learn==1.4.1
+scipy==1.11.1
+stat
+dataclasses
+enum34==1.1.13
+typing==3.11.
+dataclasses
+decimal
+seaborn==0.12.2
+pytest

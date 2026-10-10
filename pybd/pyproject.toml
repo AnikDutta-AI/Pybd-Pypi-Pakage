@@ -1,0 +1,72 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pybd-in"
+version = "0.0.1"
+description = "Dataset analysis, data quality assessment, and preprocessing recommendations"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+
+authors = [
+    { name = "Anik Dutta", email = "anikdatta@gmail.com" }
+]
+
+keywords = [
+    "data-analysis",
+    "data-quality",
+    "pandas",
+    "preprocessing",
+    "dataset-profiling",
+    "data-science"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13"
+]
+
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24"
+]
+
+[project.urls]
+Homepage = "https://github.com/AnikDutta-AI/Pybd-Pypi-Pakage"
+Repository = "https://github.com/AnikDutta-AI/Pybd-Pypi-Pakage"
+"Bug Tracker" = "https://github.com/AnikDutta-AI/Pybd-Pypi-Pakage/issues"
+
+[project.optional-dependencies]
+visualization = [
+    "matplotlib>=3.7",
+    "seaborn>=0.12"
+]
+
+dev = [
+    "pytest>=8.0",
+    "build>=1.2",
+    "twine>=5.0"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.mypy]
+mypy_path = "src"
+ignore_missing_imports = true
